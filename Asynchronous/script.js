@@ -56,15 +56,32 @@ let getData = (data) => {
 //     })
 // })
 
-//Above code can be written using Promise chain
-console.log("Fetching data 1...");
-getData(1).then(() => {
-    console.log("Fetching data 2...");
-    return getData(2);
-}).then(() => {
-    console.log("Fetching data 3...");
-    return getData(3);
-}).then((res) => {
-    console.log("Fetched all the data");
-    console.log(res);
-})
+//Above code can be written using Promise chains
+// console.log("Promise Chain");
+// console.log("Fetching data 1...");
+// getData(1).then(() => {
+//     console.log("Fetching data 2...");
+//     return getData(2);
+// }).then(() => {
+//     console.log("Fetching data 3...");
+//     return getData(3);
+// }).then((res) => {
+//     console.log("Fetched all the data");
+//     console.log(res);
+// })
+
+console.log();
+
+// async function hello () {
+//     console.log("Hello");
+// }
+
+console.log("Async-Await");
+(async () => {
+    console.log("Fetching Data 1...");
+    await getData(1);
+    console.log("Fetching Data 2...");
+    await getData(2);
+    console.log("Fetching Data 3...");
+    await getData(3);
+})();
