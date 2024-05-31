@@ -5,44 +5,46 @@ const mark = {
     },
 };
 
-const stu1 = {
-    marks : 98,
-}
+console.log(mark);
 
-stu1.__proto__ = mark;
+// const stu1 = {
+//     marks : 98,
+// }
 
-stu1.printMarks();
+// stu1.__proto__ = mark;
 
-class car {
-    constructor(brand) {
-        console.log("I am constructor");
-        this.brandName = brand;
-    }
-    start() {
-        console.log("I am starting");
-    }
-    stop() {
-        console.log("I am stopped");
-    }
-    printBrand() {
-        console.log(`My brand is ${this.brandName}`);
-    }
-}
+// stu1.printMarks();
 
-let thar = new car("Thar");
-console.log(typeof thar);
-thar.printBrand();
-thar.start();
-thar.stop();
+// class car {
+//     constructor(brand) {
+//         console.log("I am constructor");
+//         this.brandName = brand;
+//     }
+//     start() {
+//         console.log("I am starting");
+//     }
+//     stop() {
+//         console.log("I am stopped");
+//     }
+//     printBrand() {
+//         console.log(`My brand is ${this.brandName}`);
+//     }
+// }
 
-let fortuner = new car();
+// let thar = new car("Thar");
+// console.log(typeof thar);
+// thar.printBrand();
+// thar.start();
+// thar.stop();
 
-let a = 5, b = 6;
+// let fortuner = new car();
 
-try {
-    console.log(a+b);
-    console.log(b+c);
-    console.log(a+b);
-} catch(e) {
-    console.log(e);
-}
+// let a = 5, b = 6;
+
+// try {
+//     console.log(a+b);
+//     console.log(b+c);
+//     console.log(a+b);
+// } catch(e) {
+//     console.log(e);
+// }
